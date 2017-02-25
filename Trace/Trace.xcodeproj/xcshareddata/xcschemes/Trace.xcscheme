@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8753A581E608F9300CFDD23"
-               BuildableName = "Gem.app"
-               BlueprintName = "Gem"
-               ReferencedContainer = "container:Gem.xcodeproj">
+               BlueprintIdentifier = "A8753A761E61329E00CFDD23"
+               BuildableName = "Trace.app"
+               BlueprintName = "Trace"
+               ReferencedContainer = "container:Trace.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8753A581E608F9300CFDD23"
-            BuildableName = "Gem.app"
-            BlueprintName = "Gem"
-            ReferencedContainer = "container:Gem.xcodeproj">
+            BlueprintIdentifier = "A8753A761E61329E00CFDD23"
+            BuildableName = "Trace.app"
+            BlueprintName = "Trace"
+            ReferencedContainer = "container:Trace.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8753A581E608F9300CFDD23"
-            BuildableName = "Gem.app"
-            BlueprintName = "Gem"
-            ReferencedContainer = "container:Gem.xcodeproj">
+            BlueprintIdentifier = "A8753A761E61329E00CFDD23"
+            BuildableName = "Trace.app"
+            BlueprintName = "Trace"
+            ReferencedContainer = "container:Trace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8753A581E608F9300CFDD23"
-            BuildableName = "Gem.app"
-            BlueprintName = "Gem"
-            ReferencedContainer = "container:Gem.xcodeproj">
+            BlueprintIdentifier = "A8753A761E61329E00CFDD23"
+            BuildableName = "Trace.app"
+            BlueprintName = "Trace"
+            ReferencedContainer = "container:Trace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
