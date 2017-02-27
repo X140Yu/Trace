@@ -1,0 +1,7 @@
+app_identifier "com.x140yu.Trace" # The bundle identifier of your app
+apple_id "529783170@qq.com" # Your Apple email address
+
+team_id "PN5JMBRNLX"  # Developer Portal Team ID
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md
