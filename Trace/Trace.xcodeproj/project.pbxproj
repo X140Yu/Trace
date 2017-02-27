@@ -7,17 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A824D3DA1E6332AE0087E21D /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A824D3D81E6332AE0087E21D /* ProfileCollectionViewCell.swift */; };
+		A824D3DB1E6332AE0087E21D /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A824D3D91E6332AE0087E21D /* ProfileCollectionViewCell.xib */; };
+		A824D3DE1E6332DF0087E21D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A824D3DC1E6332DF0087E21D /* ProfileViewController.swift */; };
+		A824D3DF1E6332DF0087E21D /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A824D3DD1E6332DF0087E21D /* ProfileViewController.xib */; };
 		A8753A7B1E61329E00CFDD23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A7A1E61329E00CFDD23 /* AppDelegate.swift */; };
 		A8753A7D1E61329E00CFDD23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A7C1E61329E00CFDD23 /* ViewController.swift */; };
 		A8753A801E61329E00CFDD23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8753A7E1E61329E00CFDD23 /* Main.storyboard */; };
 		A8753A821E61329E00CFDD23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8753A811E61329E00CFDD23 /* Assets.xcassets */; };
 		A8753A851E61329E00CFDD23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8753A831E61329E00CFDD23 /* LaunchScreen.storyboard */; };
+		A8753A941E62906E00CFDD23 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A8E1E62906E00CFDD23 /* CardCell.swift */; };
+		A8753A951E62906E00CFDD23 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A8F1E62906E00CFDD23 /* CardView.swift */; };
+		A8753A961E62906E00CFDD23 /* CustomCardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A901E62906E00CFDD23 /* CustomCardLayout.swift */; };
+		A8753A991E62906E00CFDD23 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A931E62906E00CFDD23 /* UIViewExtension.swift */; };
+		A8753A9D1E62916600CFDD23 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A9B1E62916600CFDD23 /* SearchViewController.swift */; };
+		A8753A9E1E62916600CFDD23 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753A9C1E62916600CFDD23 /* SearchViewController.xib */; };
+		A8753AA31E62AC4C00CFDD23 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753AA11E62AC4C00CFDD23 /* SearchCollectionViewCell.swift */; };
+		A8753AA41E62AC4C00CFDD23 /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753AA21E62AC4C00CFDD23 /* SearchCollectionViewCell.xib */; };
+		A8753AA91E63204F00CFDD23 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753AA71E63204F00CFDD23 /* FeedViewController.swift */; };
+		A8753AAA1E63204F00CFDD23 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753AA81E63204F00CFDD23 /* FeedViewController.xib */; };
+		A8753AAD1E6320DA00CFDD23 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753AAB1E6320DA00CFDD23 /* FeedCollectionViewCell.swift */; };
+		A8753AAE1E6320DA00CFDD23 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753AAC1E6320DA00CFDD23 /* FeedCollectionViewCell.xib */; };
 		F0BB8601FA08949749613BEE /* Pods_Trace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60A2776317B69860681B6A2 /* Pods_Trace.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C812F1DCF45640BF4414763 /* Pods-Trace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trace/Pods-Trace.debug.xcconfig"; sourceTree = "<group>"; };
 		A60A2776317B69860681B6A2 /* Pods_Trace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A824D3D81E6332AE0087E21D /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		A824D3D91E6332AE0087E21D /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		A824D3DC1E6332DF0087E21D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A824D3DD1E6332DF0087E21D /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		A8753A771E61329E00CFDD23 /* Trace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8753A7A1E61329E00CFDD23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8753A7C1E61329E00CFDD23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +45,18 @@
 		A8753A811E61329E00CFDD23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8753A841E61329E00CFDD23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8753A861E61329E00CFDD23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8753A8E1E62906E00CFDD23 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		A8753A8F1E62906E00CFDD23 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A8753A901E62906E00CFDD23 /* CustomCardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardLayout.swift; sourceTree = "<group>"; };
+		A8753A931E62906E00CFDD23 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A8753A9B1E62916600CFDD23 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A8753A9C1E62916600CFDD23 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		A8753AA11E62AC4C00CFDD23 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		A8753AA21E62AC4C00CFDD23 /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		A8753AA71E63204F00CFDD23 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A8753AA81E63204F00CFDD23 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		A8753AAB1E6320DA00CFDD23 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		A8753AAC1E6320DA00CFDD23 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		B27677B17C1DE9F23A6CBF00 /* Pods-Trace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trace.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trace/Pods-Trace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +80,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A824D3D71E63329D0087E21D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3D81E6332AE0087E21D /* ProfileCollectionViewCell.swift */,
+				A824D3D91E6332AE0087E21D /* ProfileCollectionViewCell.xib */,
+				A824D3DC1E6332DF0087E21D /* ProfileViewController.swift */,
+				A824D3DD1E6332DF0087E21D /* ProfileViewController.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		A8753A6E1E61329E00CFDD23 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +112,12 @@
 		A8753A791E61329E00CFDD23 /* Trace */ = {
 			isa = PBXGroup;
 			children = (
-				A8753A8C1E6134F900CFDD23 /* Supporting Files */,
+				A8753A9A1E62912F00CFDD23 /* CardViewController */,
+				A8753A8D1E62905F00CFDD23 /* CardView */,
 				A8753A7A1E61329E00CFDD23 /* AppDelegate.swift */,
 				A8753A7C1E61329E00CFDD23 /* ViewController.swift */,
 				A8753A7E1E61329E00CFDD23 /* Main.storyboard */,
+				A8753A8C1E6134F900CFDD23 /* Supporting Files */,
 			);
 			path = Trace;
 			sourceTree = "<group>";
@@ -85,6 +130,49 @@
 				A8753A811E61329E00CFDD23 /* Assets.xcassets */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8753A8D1E62905F00CFDD23 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				A8753A8E1E62906E00CFDD23 /* CardCell.swift */,
+				A8753A8F1E62906E00CFDD23 /* CardView.swift */,
+				A8753A901E62906E00CFDD23 /* CustomCardLayout.swift */,
+				A8753A931E62906E00CFDD23 /* UIViewExtension.swift */,
+			);
+			name = CardView;
+			sourceTree = "<group>";
+		};
+		A8753A9A1E62912F00CFDD23 /* CardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A824D3D71E63329D0087E21D /* Profile */,
+				A8753AA61E63203A00CFDD23 /* Feed */,
+				A8753AA51E63203100CFDD23 /* Search */,
+			);
+			name = CardViewController;
+			sourceTree = "<group>";
+		};
+		A8753AA51E63203100CFDD23 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A8753A9B1E62916600CFDD23 /* SearchViewController.swift */,
+				A8753A9C1E62916600CFDD23 /* SearchViewController.xib */,
+				A8753AA11E62AC4C00CFDD23 /* SearchCollectionViewCell.swift */,
+				A8753AA21E62AC4C00CFDD23 /* SearchCollectionViewCell.xib */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		A8753AA61E63203A00CFDD23 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A8753AA71E63204F00CFDD23 /* FeedViewController.swift */,
+				A8753AA81E63204F00CFDD23 /* FeedViewController.xib */,
+				A8753AAB1E6320DA00CFDD23 /* FeedCollectionViewCell.swift */,
+				A8753AAC1E6320DA00CFDD23 /* FeedCollectionViewCell.xib */,
+			);
+			name = Feed;
 			sourceTree = "<group>";
 		};
 		F3DED451FC79AB844784FF3C /* Pods */ = {
@@ -159,8 +247,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A824D3DF1E6332DF0087E21D /* ProfileViewController.xib in Resources */,
 				A8753A851E61329E00CFDD23 /* LaunchScreen.storyboard in Resources */,
 				A8753A821E61329E00CFDD23 /* Assets.xcassets in Resources */,
+				A8753AA41E62AC4C00CFDD23 /* SearchCollectionViewCell.xib in Resources */,
+				A8753A9E1E62916600CFDD23 /* SearchViewController.xib in Resources */,
+				A8753AAE1E6320DA00CFDD23 /* FeedCollectionViewCell.xib in Resources */,
+				A8753AAA1E63204F00CFDD23 /* FeedViewController.xib in Resources */,
+				A824D3DB1E6332AE0087E21D /* ProfileCollectionViewCell.xib in Resources */,
 				A8753A801E61329E00CFDD23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +316,16 @@
 			files = (
 				A8753A7D1E61329E00CFDD23 /* ViewController.swift in Sources */,
 				A8753A7B1E61329E00CFDD23 /* AppDelegate.swift in Sources */,
+				A8753AAD1E6320DA00CFDD23 /* FeedCollectionViewCell.swift in Sources */,
+				A8753AA31E62AC4C00CFDD23 /* SearchCollectionViewCell.swift in Sources */,
+				A824D3DE1E6332DF0087E21D /* ProfileViewController.swift in Sources */,
+				A8753A9D1E62916600CFDD23 /* SearchViewController.swift in Sources */,
+				A8753A951E62906E00CFDD23 /* CardView.swift in Sources */,
+				A8753A961E62906E00CFDD23 /* CustomCardLayout.swift in Sources */,
+				A824D3DA1E6332AE0087E21D /* ProfileCollectionViewCell.swift in Sources */,
+				A8753AA91E63204F00CFDD23 /* FeedViewController.swift in Sources */,
+				A8753A991E62906E00CFDD23 /* UIViewExtension.swift in Sources */,
+				A8753A941E62906E00CFDD23 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PN5JMBRNLX;
 				INFOPLIST_FILE = Trace/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.x140yu.Trace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PN5JMBRNLX;
 				INFOPLIST_FILE = Trace/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.x140yu.Trace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
