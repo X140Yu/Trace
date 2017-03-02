@@ -19,7 +19,7 @@
 		A8753A941E62906E00CFDD23 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A8E1E62906E00CFDD23 /* CardCell.swift */; };
 		A8753A951E62906E00CFDD23 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A8F1E62906E00CFDD23 /* CardView.swift */; };
 		A8753A961E62906E00CFDD23 /* CustomCardLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A901E62906E00CFDD23 /* CustomCardLayout.swift */; };
-		A8753A991E62906E00CFDD23 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A931E62906E00CFDD23 /* UIViewExtension.swift */; };
+		A8753A991E62906E00CFDD23 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A931E62906E00CFDD23 /* UIView+Extensions.swift */; };
 		A8753A9D1E62916600CFDD23 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753A9B1E62916600CFDD23 /* SearchViewController.swift */; };
 		A8753A9E1E62916600CFDD23 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753A9C1E62916600CFDD23 /* SearchViewController.xib */; };
 		A8753AA31E62AC4C00CFDD23 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753AA11E62AC4C00CFDD23 /* SearchCollectionViewCell.swift */; };
@@ -48,7 +48,7 @@
 		A8753A8E1E62906E00CFDD23 /* CardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		A8753A8F1E62906E00CFDD23 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		A8753A901E62906E00CFDD23 /* CustomCardLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardLayout.swift; sourceTree = "<group>"; };
-		A8753A931E62906E00CFDD23 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A8753A931E62906E00CFDD23 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A8753A9B1E62916600CFDD23 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A8753A9C1E62916600CFDD23 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		A8753AA11E62AC4C00CFDD23 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 				A8753A8E1E62906E00CFDD23 /* CardCell.swift */,
 				A8753A8F1E62906E00CFDD23 /* CardView.swift */,
 				A8753A901E62906E00CFDD23 /* CustomCardLayout.swift */,
-				A8753A931E62906E00CFDD23 /* UIViewExtension.swift */,
+				A8753A931E62906E00CFDD23 /* UIView+Extensions.swift */,
 			);
 			name = CardView;
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				A8753A961E62906E00CFDD23 /* CustomCardLayout.swift in Sources */,
 				A824D3DA1E6332AE0087E21D /* ProfileCollectionViewCell.swift in Sources */,
 				A8753AA91E63204F00CFDD23 /* FeedViewController.swift in Sources */,
-				A8753A991E62906E00CFDD23 /* UIViewExtension.swift in Sources */,
+				A8753A991E62906E00CFDD23 /* UIView+Extensions.swift in Sources */,
 				A8753A941E62906E00CFDD23 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

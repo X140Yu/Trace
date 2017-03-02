@@ -10,12 +10,12 @@
 import UIKit
 import SnapKit
 
-public protocol CardCollectionViewDataSource:class {
-    func cardView(collectionView:UICollectionView,item:AnyObject,indexPath:IndexPath) -> UICollectionViewCell
+public protocol CardCollectionViewDataSource: class {
+    func cardView(collectionView: UICollectionView, item: AnyObject, indexPath: IndexPath) -> UICollectionViewCell
 }
 
 public class CardView: UIView {
-    public weak var cardDataSource:CardCollectionViewDataSource?
+    public weak var cardDataSource: CardCollectionViewDataSource?
 
     fileprivate var isFilterMode = false
 
@@ -26,13 +26,13 @@ public class CardView: UIView {
             self.collectionView.reloadData()
             //            self.collectionView.reloadItems(at: self.collectionView.indexPathsForVisibleItems)
             if cardArr.count > 0 {
-                filterSet = Array(0...cardArr.count-1)
+                filterSet = Array(0...cardArr.count - 1)
             }
             filterArr.removeAll()
             filterArr += cardArr
         }
     }
-    fileprivate lazy var collectionView:UICollectionView = {
+    fileprivate lazy var collectionView: UICollectionView = {
         let layout = CustomCardLayout()
         let c = UICollectionView.init(frame: self.frame, collectionViewLayout: layout)
         c.translatesAutoresizingMaskIntoConstraints = false
@@ -141,7 +141,7 @@ public class CardView: UIView {
         self.filterAllDataWith { _,_ in true}
     }
 
-    public func registerCardCell(c:AnyClass,nib:UINib) {
+    public func registerCardCell(c: AnyClass, nib: UINib) {
         if (c.alloc().isKind(of: CardCell.classForCoder())) {
             let identifier = c.value(forKey: "cellIdentifier") as! String
             collectionView.register(nib, forCellWithReuseIdentifier: identifier)
@@ -150,13 +150,13 @@ public class CardView: UIView {
         }
     }
 
-    public func expandBottomCount(count:Int) {
+    public func expandBottomCount(count: Int) {
         if let layout = self.collectionView.collectionViewLayout as? CustomCardLayout {
             layout.bottomShowCount = count
         }
     }
 
-    public func setCardTitleHeight(heihgt:CGFloat) {
+    public func setCardTitleHeight(heihgt: CGFloat) {
         DispatchQueue.main.async {
             if let layout = self.collectionView.collectionViewLayout as? CustomCardLayout {
                 layout.titleHeight = heihgt
@@ -164,7 +164,7 @@ public class CardView: UIView {
         }
     }
 
-    public func setCardHeight(height:CGFloat) {
+    public func setCardHeight(height: CGFloat) {
         DispatchQueue.main.async {
             if let layout = self.collectionView.collectionViewLayout as? CustomCardLayout {
                 layout.cellSize = CGSize.init(width: layout.cellSize.width, height: height)
@@ -173,7 +173,7 @@ public class CardView: UIView {
         }
     }
 
-    public func removeCard(at index:Int) {
+    public func removeCard(at index: Int) {
         if index > -1 {
             self.collectionView.performBatchUpdates({
                 self.filterArr.remove(at: index)
@@ -219,11 +219,14 @@ extension CardView:UICollectionViewDelegate {
         if indexPath.row == 0 {
             return
         }
+        if currentIdx() == indexPath.row {
+            return;
+        }
         self.selectAt(index: indexPath.row)
     }
 }
 
-extension CardView:UICollectionViewDataSource {
+extension CardView: UICollectionViewDataSource {
 
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

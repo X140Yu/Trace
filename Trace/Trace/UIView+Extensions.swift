@@ -1,5 +1,5 @@
 //
-//  UIViewExtension.swift
+//  UIView+Extensions.swift
 //  Pods
 //
 //  Created by X140Yu on 2/26/17.

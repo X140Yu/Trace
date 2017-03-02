@@ -23,11 +23,11 @@ class CardLayoutAttributes: UICollectionViewLayoutAttributes {
 class CustomCardLayout: UICollectionViewLayout {
     fileprivate var insertPath = [IndexPath]()
     fileprivate var deletePath = [IndexPath]()
-    fileprivate var attributeList:[CardLayoutAttributes]!
+    fileprivate var attributeList: [CardLayoutAttributes]!
     fileprivate var bottomShowSet = [Int]()
     fileprivate var _selectIdx = -1
 
-    var selectIdx:Int {
+    var selectIdx: Int {
         set {
 
             if self.collectionView?.numberOfItems(inSection: 0) == 1 {
@@ -77,7 +77,7 @@ class CustomCardLayout: UICollectionViewLayout {
         }
     }
 
-    var titleHeight:CGFloat = 56.0 {
+    var titleHeight: CGFloat = 56.0 {
         didSet {
             self.collectionView?.performBatchUpdates({
                 self.invalidateLayout()
@@ -85,7 +85,7 @@ class CustomCardLayout: UICollectionViewLayout {
         }
     }
 
-    lazy var cellSize:CGSize = {
+    lazy var cellSize: CGSize = {
         let w = self.collectionView!.bounds.width
         let h = self.collectionView!.bounds.height * BottomPercent
         let size = CGSize.init(width: w, height: h)

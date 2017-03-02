@@ -13,14 +13,15 @@ public protocol CardCellProtocol {
     static func cellIdentifier() -> String
 }
 
-open class CardCell:UICollectionViewCell{
-    var collectionV:UICollectionView!
+open class CardCell: UICollectionViewCell{
+    var collectionV: UICollectionView!
     var disablePan = false
-    var reloadBlock:(()->Void)?
-    var customCardLayout:CardLayoutAttributes?
-    var originTouchY:CGFloat = 0.0
-    var pangesture:UIPanGestureRecognizer?
-    func pan(rec:UIPanGestureRecognizer){
+    var reloadBlock: (()->Void)?
+    var customCardLayout: CardLayoutAttributes?
+    var originTouchY: CGFloat = 0.0
+    var pangesture: UIPanGestureRecognizer?
+
+    func pan(rec: UIPanGestureRecognizer){
         if disablePan == true {
             return
         }
@@ -28,7 +29,7 @@ open class CardCell:UICollectionViewCell{
             return
         }
         let point = rec.location(in: collectionV)
-        let shiftY:CGFloat = (point.y - originTouchY  > 0) ? point.y - originTouchY : 0
+        let shiftY: CGFloat = (point.y - originTouchY  > 0) ? point.y - originTouchY : 0
 
         switch rec.state {
         case .began:
@@ -75,7 +76,7 @@ open class CardCell:UICollectionViewCell{
     }
 }
 
-extension CardCell:UIGestureRecognizerDelegate {
+extension CardCell: UIGestureRecognizerDelegate {
 
     open override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
 
