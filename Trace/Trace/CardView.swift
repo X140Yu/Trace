@@ -214,7 +214,7 @@ public class CardView: UIView {
     }
 }
 
-extension CardView:UICollectionViewDelegate {
+extension CardView: UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             return
@@ -240,11 +240,20 @@ extension CardView: UICollectionViewDataSource {
         guard let source = cardDataSource?.cardView(collectionView: collectionView,item: filterArr[indexPath.row], indexPath: indexPath) as? CardCell else {
             return UICollectionViewCell()
         }
+
         //        source.transform = .identity
         source.collectionV = collectionView
         source.reloadBlock = {
             if let custom = collectionView.collectionViewLayout as? CustomCardLayout {
                 custom.selectIdx = indexPath.row
+
+                if indexPath.row != 0 {
+                    let cell = collectionView.cellForItem(at: IndexPath(row: 0, section: 0))
+                    if cell is SearchCollectionViewCell {
+                        let cell = cell as! SearchCollectionViewCell
+                        let _ = cell.rootViewController!.textField!.becomeFirstResponder()
+                    }
+                }
             }
         }
         source.isHidden = false

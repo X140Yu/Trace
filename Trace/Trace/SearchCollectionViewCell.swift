@@ -12,7 +12,7 @@ import SnapKit
 class SearchCollectionViewCell: CardCell {
 
     var navigationController: UINavigationController!
-    var rootViewController: UIViewController!
+    var rootViewController: SearchViewController!
 
     override func awakeFromNib() {
         super.awakeFromNib()
