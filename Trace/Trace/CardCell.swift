@@ -13,7 +13,7 @@ public protocol CardCellProtocol {
     static func cellIdentifier() -> String
 }
 
-open class CardCell: UICollectionViewCell{
+open class CardCell: UICollectionViewCell {
     var collectionV: UICollectionView!
     var disablePan = false
     var reloadBlock: (()->Void)?

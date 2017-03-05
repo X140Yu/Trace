@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Trace" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPostViewController" customModule="Trace" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,12 +18,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eA-VL-zup">
-                    <rect key="frame" x="140" y="318" width="96" height="30"/>
-                    <state key="normal" title="This is profile!"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrI-OF-2K3">
-                    <rect key="frame" x="16" y="20" width="49" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWF-f2-NoO">
+                    <rect key="frame" x="16" y="20" width="73" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -31,10 +27,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="8eA-VL-zup" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jwf-Gy-Q3Y"/>
-                <constraint firstItem="8eA-VL-zup" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Zi1-Mk-G14"/>
-                <constraint firstItem="UrI-OF-2K3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="e3b-uo-oNt"/>
-                <constraint firstItem="UrI-OF-2K3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="s39-jg-k20"/>
+                <constraint firstItem="fWF-f2-NoO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="4nr-g4-ciE"/>
+                <constraint firstItem="fWF-f2-NoO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Met-a7-HjI"/>
             </constraints>
         </view>
     </objects>

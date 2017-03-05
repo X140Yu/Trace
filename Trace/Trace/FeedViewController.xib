@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,8 +22,8 @@
                     <rect key="frame" x="109.5" y="318" width="156" height="30"/>
                     <state key="normal" title="Navigate me to profile!"/>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed Feed Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-46-P1M">
-                    <rect key="frame" x="125.5" y="20" width="123" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOS-46-P1M">
+                    <rect key="frame" x="16" y="20" width="38.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -33,9 +32,9 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="C6r-3U-Tt8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0gA-39-sQu"/>
-                <constraint firstItem="fOS-46-P1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="BAx-q0-qbz"/>
+                <constraint firstItem="fOS-46-P1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="1S3-Xb-Zg1"/>
                 <constraint firstItem="C6r-3U-Tt8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BDq-zu-sHF"/>
-                <constraint firstItem="fOS-46-P1M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rF9-fb-KZQ"/>
+                <constraint firstItem="fOS-46-P1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="XoF-BV-RgT"/>
             </constraints>
             <point key="canvasLocation" x="-323.5" y="35.5"/>
         </view>
