@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Trace" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="u6a-Zp-crC" id="hgg-oe-SHc"/>
                 <outlet property="textField" destination="MnV-Tc-GVM" id="YGa-br-g9n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,17 +32,30 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyh-Dc-9Sx" userLabel="Profile">
                     <rect key="frame" x="16" y="24" width="22" height="22"/>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-Zp-crC">
+                    <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="G7m-Hr-DmG"/>
+                        <outlet property="delegate" destination="-1" id="JaN-wr-7Xn"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="MnV-Tc-GVM" firstAttribute="leading" secondItem="eyh-Dc-9Sx" secondAttribute="trailing" constant="8" id="1TT-Aw-Dse"/>
+                <constraint firstItem="u6a-Zp-crC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1da-IG-2rz"/>
+                <constraint firstAttribute="bottom" secondItem="u6a-Zp-crC" secondAttribute="bottom" id="4cS-we-orh"/>
+                <constraint firstAttribute="trailing" secondItem="u6a-Zp-crC" secondAttribute="trailing" id="5HL-Li-GAD"/>
                 <constraint firstItem="MnV-Tc-GVM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="B2H-hx-g3e"/>
                 <constraint firstItem="eyh-Dc-9Sx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="LMv-LF-Ub4"/>
                 <constraint firstItem="WWX-13-DsD" firstAttribute="leading" secondItem="MnV-Tc-GVM" secondAttribute="trailing" constant="8" id="Njt-ht-CQH"/>
                 <constraint firstItem="WWX-13-DsD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="QU2-jn-7CO"/>
                 <constraint firstItem="eyh-Dc-9Sx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="bk0-sI-GpD"/>
+                <constraint firstItem="u6a-Zp-crC" firstAttribute="top" secondItem="MnV-Tc-GVM" secondAttribute="bottom" constant="8" id="f9B-Ga-XHV"/>
                 <constraint firstAttribute="trailing" secondItem="WWX-13-DsD" secondAttribute="trailing" constant="16" id="xjT-8I-3nT"/>
             </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
 </document>

@@ -207,7 +207,7 @@ public class CardView: UIView {
         return -1
     }
 
-    fileprivate func selectAt(index:Int) {
+    func selectAt(index:Int) {
         if let custom = collectionView.collectionViewLayout as? CustomCardLayout {
             custom.selectIdx = index
         }

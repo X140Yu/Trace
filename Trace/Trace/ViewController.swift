@@ -19,8 +19,12 @@ class ViewController: UIViewController {
         cardView.registerCardCell(c: SearchCollectionViewCell.classForCoder(), nib: UINib.init(nibName: "SearchCollectionViewCell", bundle: nil))
         cardView.registerCardCell(c: FeedCollectionViewCell.classForCoder(), nib: UINib.init(nibName: "FeedCollectionViewCell", bundle: nil))
         cardView.registerCardCell(c: ProfileCollectionViewCell.classForCoder(), nib: UINib.init(nibName: "ProfileCollectionViewCell", bundle: nil))
+        cardView.registerCardCell(c: NewPostCollectionViewCell.classForCoder(), nib: UINib.init(nibName: "NewPostCollectionViewCell", bundle: nil))
+
         cardView.cardDataSource = self
-        cardView.set(cards: generateCardInfo(cardCount: 3))
+        
+        cardView.set(cards: generateCardInfo(cardCount: 2))
+        cardView.selectAt(index: 1)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -29,10 +33,9 @@ class ViewController: UIViewController {
 
     func generateCardInfo (cardCount:Int) -> [AnyObject] {
         var arr = [AnyObject]()
-        let xibName = ["SearchCollectionViewCell", "FeedCollectionViewCell", "ProfileCollectionViewCell"]
+        let xibName = ["SearchCollectionViewCell", "FeedCollectionViewCell"]
 
         for i in 0..<cardCount {
-            //            let value = Int(arc4random_uniform(3))
             arr.append(xibName[i] as AnyObject)
         }
 
