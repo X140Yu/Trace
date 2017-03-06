@@ -8,5 +8,6 @@ target 'Trace' do
   # Pods for Trace
   pod 'SnapKit', '~> 3.2.0'
   pod 'RxSwift'
+  pod 'RxCocoa'
 
 end
