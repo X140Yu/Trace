@@ -22,6 +22,9 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWX-13-DsD" userLabel="Add Photo">
                     <rect key="frame" x="337" y="24" width="22" height="22"/>
+                    <connections>
+                        <action selector="handleAddPostButton:" destination="-1" eventType="touchUpInside" id="LoU-E3-xNw"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="search something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MnV-Tc-GVM">
                     <rect key="frame" x="46" y="20" width="283" height="30"/>

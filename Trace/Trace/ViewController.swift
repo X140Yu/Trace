@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     // MARK: Properties
     @IBOutlet weak var cardView: CardView!
 
+    private var cards = [AnyObject]()
+
     // MARK: Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +24,42 @@ class ViewController: UIViewController {
         cardView.registerCardCell(c: NewPostCollectionViewCell.classForCoder(), nib: UINib.init(nibName: "NewPostCollectionViewCell", bundle: nil))
 
         cardView.cardDataSource = self
-        
-        cardView.set(cards: generateCardInfo(cardCount: 2))
+
+        cards = generateCardInfo(cardCount: 2)
+        cardView.set(cards: cards)
         cardView.selectAt(index: 1)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    public func showProfileVC(userID: String) {
+        for c in cards {
+            if c.isEqual("ProfileCollectionViewCell") {
+                return
+            }
+        }
+
+        cards.append("ProfileCollectionViewCell" as AnyObject)
+        cardView.addCard(card: "ProfileCollectionViewCell" as AnyObject)
+        DispatchQueue.main.asyncAfter(deadline: .now()  + 0.3) {
+            self.cardView.selectAt(index: self.cards.count - 1)
+        }
+    }
+
+    public func showNewPostVC() {
+        for c in cards {
+            if c.isEqual("NewPostCollectionViewCell") {
+                return
+            }
+        }
+
+        cards.append("NewPostCollectionViewCell" as AnyObject)
+        cardView.addCard(card: "NewPostCollectionViewCell" as AnyObject)
+        DispatchQueue.main.asyncAfter(deadline: .now()  + 0.3) {
+            self.cardView.selectAt(index: self.cards.count - 1)
+        }
     }
 
     func generateCardInfo (cardCount:Int) -> [AnyObject] {
@@ -53,6 +84,8 @@ extension ViewController: CardCollectionViewDataSource {
         case _ as FeedCollectionViewCell:
             break
         case _ as ProfileCollectionViewCell:
+            break
+        case _ as NewPostCollectionViewCell:
             break
         default:
             return UICollectionViewCell()

@@ -32,6 +32,7 @@
 		A8753AAA1E63204F00CFDD23 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753AA81E63204F00CFDD23 /* FeedViewController.xib */; };
 		A8753AAD1E6320DA00CFDD23 /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8753AAB1E6320DA00CFDD23 /* FeedCollectionViewCell.swift */; };
 		A8753AAE1E6320DA00CFDD23 /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8753AAC1E6320DA00CFDD23 /* FeedCollectionViewCell.xib */; };
+		A89946A21E6CE9FF00C51AAC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89946A11E6CE9FF00C51AAC /* Helper.swift */; };
 		F0BB8601FA08949749613BEE /* Pods_Trace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A60A2776317B69860681B6A2 /* Pods_Trace.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		A8753AA81E63204F00CFDD23 /* FeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		A8753AAB1E6320DA00CFDD23 /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		A8753AAC1E6320DA00CFDD23 /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		A89946A11E6CE9FF00C51AAC /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B27677B17C1DE9F23A6CBF00 /* Pods-Trace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trace.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trace/Pods-Trace.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				A8753A8D1E62905F00CFDD23 /* CardView */,
 				A8753A7A1E61329E00CFDD23 /* AppDelegate.swift */,
 				A8753A7C1E61329E00CFDD23 /* ViewController.swift */,
+				A89946A11E6CE9FF00C51AAC /* Helper.swift */,
 				A8753A7E1E61329E00CFDD23 /* Main.storyboard */,
 				A8753A8C1E6134F900CFDD23 /* Supporting Files */,
 			);
@@ -338,6 +341,7 @@
 			files = (
 				A8753A7D1E61329E00CFDD23 /* ViewController.swift in Sources */,
 				A8753A7B1E61329E00CFDD23 /* AppDelegate.swift in Sources */,
+				A89946A21E6CE9FF00C51AAC /* Helper.swift in Sources */,
 				A8753AAD1E6320DA00CFDD23 /* FeedCollectionViewCell.swift in Sources */,
 				A8217BEF1E6BC250001C4F9E /* NewPostViewController.swift in Sources */,
 				A8753AA31E62AC4C00CFDD23 /* SearchCollectionViewCell.swift in Sources */,

@@ -58,6 +58,10 @@ class SearchViewController: UIViewController {
 
     }
 
+    @IBAction func handleAddPostButton(_ sender: UIButton) {
+        Helper.rootViewController().showNewPostVC()
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -95,5 +99,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        Helper.rootViewController().showProfileVC(userID: "asd")
     }
+    
 }

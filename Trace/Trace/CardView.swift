@@ -59,6 +59,10 @@ public class CardView: UIView {
         cardArr += cards
     }
 
+    public func addCard(card: AnyObject) {
+        cardArr.append(card)
+    }
+
     public func filterAllDataWith(isInclued:@escaping (Int,AnyObject) -> Bool) {
 
         DispatchQueue.main.async {
@@ -207,7 +211,7 @@ public class CardView: UIView {
         return -1
     }
 
-    func selectAt(index:Int) {
+    public func selectAt(index:Int) {
         if let custom = collectionView.collectionViewLayout as? CustomCardLayout {
             custom.selectIdx = index
         }
@@ -245,6 +249,10 @@ extension CardView: UICollectionViewDataSource {
         source.collectionV = collectionView
         source.reloadBlock = {
             if let custom = collectionView.collectionViewLayout as? CustomCardLayout {
+                let item = self.cardArr[indexPath.row]
+                self.cardArr.remove(at: indexPath.row)
+                self.cardArr.append(item)
+                
                 custom.selectIdx = indexPath.row
 
                 if indexPath.row != 0 {

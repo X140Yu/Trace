@@ -28,13 +28,19 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dKV-OP-CWC">
+                    <rect key="frame" x="14" y="280" width="347" height="31"/>
+                </slider>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="C6r-3U-Tt8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0gA-39-sQu"/>
                 <constraint firstItem="fOS-46-P1M" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="1S3-Xb-Zg1"/>
                 <constraint firstItem="C6r-3U-Tt8" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BDq-zu-sHF"/>
+                <constraint firstItem="C6r-3U-Tt8" firstAttribute="top" secondItem="dKV-OP-CWC" secondAttribute="bottom" constant="8" id="TRN-pM-tSJ"/>
                 <constraint firstItem="fOS-46-P1M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="XoF-BV-RgT"/>
+                <constraint firstItem="dKV-OP-CWC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="hOU-gI-jQL"/>
+                <constraint firstAttribute="trailing" secondItem="dKV-OP-CWC" secondAttribute="trailing" constant="16" id="t5u-lV-VrQ"/>
             </constraints>
             <point key="canvasLocation" x="-323.5" y="35.5"/>
         </view>
